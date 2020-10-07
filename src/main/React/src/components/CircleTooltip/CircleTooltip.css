@@ -1,0 +1,18 @@
+.c-circle {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #0075D2;
+    text-align: center;
+}
+
+.c-circle--shown {
+    background-color: #0075D2;
+    color: white;
+}
+
+.c-circle::after {
+    content: "i"
+}

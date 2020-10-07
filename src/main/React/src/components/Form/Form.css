@@ -1,0 +1,10 @@
+.c-button {
+    font-weight: bold;
+    height: 44px;
+    padding: 0 26px;
+    outline: none;
+}
+
+.c-button--large {
+    min-width: 132px;
+}

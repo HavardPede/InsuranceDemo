@@ -1,0 +1,23 @@
+.c-email_input__wrapper {
+    margin-bottom: 50px;
+}
+
+.c-email_input--invalid {
+    border-color: red !important;
+    border-width: 2px !important;
+    color: red;
+}
+
+.c-error {
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}

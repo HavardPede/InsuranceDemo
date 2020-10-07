@@ -1,0 +1,33 @@
+.c-dropdown_choices {
+    width: 264px !important;
+    position: absolute;
+}
+
+.c-dropdown_choice {
+    display: block;
+    background-color: #F5F5F5;
+    line-height: 44px;
+    cursor: pointer;
+    padding-left: 8px;
+}
+
+.c-dropdown_choice:hover {
+    color: #0075D2;
+}
+
+.c-dropdown_choice--selected {
+    color: white;
+    background-color: #0075D2;
+}
+
+.c-dropdown_choice--selected:hover {
+    color: lightblue;
+}
+
+.c-dropdown__svg {
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}

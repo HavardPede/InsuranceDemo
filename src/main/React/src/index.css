@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Museo-Sans';
+    src: local('Museo-Sans'), url(./fonts/museo-sans.otf) format('otf');
+}
+
+#root {
+    color: #000065;
+    font-family: Museo-Sans, Arial;
+}
+
+.u-margin-bottom {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.c-input {
+    border: #CDCDCD 1px solid;
+    height: 44px;
+    padding-left: 8px;
+    border-radius: 3px;
+    box-shadow: inset 0px 1px 2px #CDCDCD;
+    outline: none;
+    color: black;
+}
+
+.c-input--small {
+    width: 132px;
+}
+
+.c-input--medium {
+    width: 264px;
+}
+
+.u-no_select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
