@@ -84,7 +84,7 @@ export function Form({ createInsurance }: Props): JSX.Element {
             choices={[{ label: "The Best", value: "best" }, { label: "Decent", value: "ok" }]}
             value={state.bonus}
             name={"bonus"}
-            placeholder={"velg din bonus..."}
+            placeholder={"velg din bonus"}
             onChange={storeValueInState}
         />
 

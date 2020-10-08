@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Museo-Sans';
-    src: local('Museo-Sans'), url(./fonts/museo-sans.otf) format('otf');
+    src: local('Museo-Sans'), url(./fonts/museo-sans.otf) format('opentype');
 }
 
 #root {
@@ -17,7 +17,7 @@
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
 }

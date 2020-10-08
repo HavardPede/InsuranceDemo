@@ -16,7 +16,6 @@ export function App(): JSX.Element {
 
     async function onSubmit(insurance: Insurance) {
         const response: Response = await API.createInsurance(insurance)
-        console.log(response)
         setState({ complete: true, result: response })
     }
 
@@ -24,8 +23,8 @@ export function App(): JSX.Element {
         setState({ complete: true, result: null })
     }
 
-    return <div className={"flex flex-col p-4 md:w-3/5 m-auto max-w-3xl"}>
-        <h1 className={"text-center text-2xl mb-6 font-bold"}>Kjøp bilforsikring</h1>
+    return <div className={"flex flex-col p-4 md:w-3/5 m-auto max-w-2xl"}>
+        <h1 className={"text-center text-4xl mb-6 font-bold"}>Kjøp bilforsikring</h1>
         <p className={"text-center md:text-left mb-8"}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuesmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
@@ -36,7 +35,6 @@ export function App(): JSX.Element {
 }
 
 function renderModal(formComplete: boolean, onClose: Function, response: Response | null): JSX.Element | null {
-    console.log(formComplete, response)
     if (!formComplete || !response) return null
 
     let content: JSX.Element;
@@ -50,7 +48,7 @@ function renderModal(formComplete: boolean, onClose: Function, response: Respons
     } else {
         content = <>
             <p>We failed to create your insurance</p>
-            <p className={"mt-4 font-bold"}>Please try again</p>
+            <p className={"mt-4 font-bold cursor-pointer"} onClick={() => onClose()}>Please try again</p>
         </>
     }
 
