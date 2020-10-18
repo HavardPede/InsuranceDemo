@@ -5,14 +5,6 @@ import { CircleTooltip } from "../CircleTooltip";
 import { Insurance } from "../../types"
 import "./Form.css"
 
-const INITIAL_STATE: Insurance = {
-    registrationNumber: "",
-    bonus: "",
-    birthNumber: null,
-    forename: "",
-    surname: "",
-    email: ""
-}
 function initialState(): Insurance {
     return {
         registrationNumber: "",
@@ -23,6 +15,7 @@ function initialState(): Insurance {
         email: ""
     }
 }
+
 type Props = { createInsurance(Insurance): void }
 
 /**

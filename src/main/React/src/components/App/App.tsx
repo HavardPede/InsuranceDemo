@@ -20,7 +20,7 @@ export function App(): JSX.Element {
     }
 
     function closeModal() {
-        setState({ complete: true, result: null })
+        setState({ complete: false, result: null })
     }
 
     return <div className={"flex flex-col p-4 md:w-3/5 m-auto max-w-2xl"}>

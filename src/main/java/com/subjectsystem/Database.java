@@ -28,7 +28,6 @@ public class Database implements DatabaseInterface {
     public void putCustomer(Customer customer) {
         customers.put(customer.getId(), customer);
     }
-
     public Customer getCustomer(UUID customerId) {
         return (Customer) customers.get(customerId);
     }
